@@ -3,19 +3,21 @@ var store= require ('./store.js');
 
 
 function Card(props) {    
-   
-    Object.keys(store.allCards).map((_, i) => 
-        (<div className='Card'>
+    
+    Object.keys(store.allCards).map((_, i) => {
+        
+        return `
+         <div className='Card'>
             <h3>
-                {store.allCards[i].title}
+                ${store.allCards[i].title}
             </h3>
             <p>
-                {store.allCards[i].content}
+                ${store.allCards[i].content}
             </p>
         </div>
-        )
-        );
-    }
+         `
+    });
+}
 
 
 
