@@ -4,15 +4,14 @@ var store= require ('./store.js');
 
 function Card(props) {    
     
-    Object.keys(store.allCards).map((_, i) => {
-        
+    Object.keys(store.allCards).map((value, i) => {
         return `
          <div className='Card'>
             <h3>
-                ${store.allCards[i].title}
+                ${store.allCards[value].title}
             </h3>
             <p>
-                ${store.allCards[i].content}
+                ${store.allCards[value].content}
             </p>
         </div>
          `
