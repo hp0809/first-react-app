@@ -1,5 +1,4 @@
 import React from 'react';
-import Card from './Card.js';
 var store= require ('./store.js');
 
 function List(header, cards) {
@@ -12,7 +11,7 @@ function List(header, cards) {
                             <h2>{card.header}</h2>
                         </header>
                         <div className="List-cards">
-                            {<Card />}
+                            {card.cardIds}
                         </div>
                     </section> 
                 )
