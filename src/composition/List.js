@@ -15,7 +15,7 @@ function List(header, cards) {
                         <div className="List-cards">
                             <Card cardIds={card.cardIds} />
                         </div>
-                        <Card />
+                        
                     </section> 
                 )
             }
