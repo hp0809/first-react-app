@@ -1,5 +1,6 @@
 import React from 'react';
-import Card from './Card.js'
+import Card from './Card.js';
+import './List.css';
 var store= require ('./store.js');
 
 
