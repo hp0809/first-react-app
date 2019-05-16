@@ -6,7 +6,7 @@ var store= require ('./composition/store.js');
 function App(store) {
   return (
     <main className='App'>
-      <header>
+      <header className="App-header">
         <h1>Trelloyes!</h1>
       </header>
       <div className="App-list">

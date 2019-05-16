@@ -1,5 +1,7 @@
 import React from 'react';
+import Card from './Card.js'
 var store= require ('./store.js');
+
 
 function List(header, cards) {
     return (
@@ -7,12 +9,13 @@ function List(header, cards) {
             {store.lists.map(function (card) {
                 return (
                     <section className="List">
-                        <header>
+                        <header className="List-header">
                             <h2>{card.header}</h2>
                         </header>
                         <div className="List-cards">
-                            {card.cardIds}
+                            <Card cardIds={card.cardIds} />
                         </div>
+                        <Card />
                     </section> 
                 )
             }
