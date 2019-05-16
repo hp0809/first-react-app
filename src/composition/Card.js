@@ -6,7 +6,7 @@ function Card(props) {
     
     return (
         <div>
-            {props.allCards.map(function (val) {
+            {props.cardIds.map(function (val) {
                 return (
                     <div>
                         {store.allCards[val].title}<br />
