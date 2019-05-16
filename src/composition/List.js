@@ -6,7 +6,7 @@ var store= require ('./store.js');
 
 function List(header, cards) {
     return (
-        <div>
+        <>
             {store.lists.map(function (card) {
                 return (
                     <section className="List">
@@ -21,7 +21,7 @@ function List(header, cards) {
                 )
             }
             )}
-        </div>  
+        </>  
     );
 }
 
