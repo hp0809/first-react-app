@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import List from './composition/List.js';
-var store= require ('./composition/store.js');
 
 function App(store) {
   return (
