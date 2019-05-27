@@ -45,6 +45,8 @@ class App extends React.Component {
     store: STORE,
   };
   handleDeleteCard = (cardId) => {
+
+  
     const { lists, allCards } = this.state.store;
 
     const newLists = lists.map(list => ({
